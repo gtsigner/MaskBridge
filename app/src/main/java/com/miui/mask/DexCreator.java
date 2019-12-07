@@ -1,4 +1,4 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 import android.os.Environment;
 
@@ -13,7 +13,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.zip.Adler32;
 
-import static de.robv.android.xposed.XposedHelpers.inputStreamToByteArray;
+import static com.miui.mask.XposedHelpers.inputStreamToByteArray;
 
 /**
  * Helper class which can create a very simple .dex file, containing only a class definition

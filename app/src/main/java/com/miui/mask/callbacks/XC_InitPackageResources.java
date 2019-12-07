@@ -1,9 +1,9 @@
-package de.robv.android.xposed.callbacks;
+package com.miui.mask.callbacks;
 
 import android.content.res.XResources;
 
-import de.robv.android.xposed.IXposedHookInitPackageResources;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
+import com.miui.mask.IXposedHookInitPackageResources;
+import com.miui.mask.XposedBridge.CopyOnWriteSortedSet;
 
 /**
  * This class is only used for internal purposes, except for the {@link InitPackageResourcesParam}

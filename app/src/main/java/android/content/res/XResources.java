@@ -26,23 +26,23 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.WeakHashMap;
 
-import de.robv.android.xposed.IXposedHookZygoteInit;
-import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XC_MethodHook.MethodHookParam;
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
-import de.robv.android.xposed.callbacks.XC_LayoutInflated;
-import de.robv.android.xposed.callbacks.XC_LayoutInflated.LayoutInflatedParam;
-import de.robv.android.xposed.callbacks.XCallback;
+import com.miui.mask.IXposedHookZygoteInit;
+import com.miui.mask.XC_MethodHook;
+import com.miui.mask.XC_MethodHook.MethodHookParam;
+import com.miui.mask.XposedBridge;
+import com.miui.mask.XposedBridge.CopyOnWriteSortedSet;
+import com.miui.mask.callbacks.XC_LayoutInflated;
+import com.miui.mask.callbacks.XC_LayoutInflated.LayoutInflatedParam;
+import com.miui.mask.callbacks.XCallback;
 import xposed.dummy.XResourcesSuperClass;
 import xposed.dummy.XTypedArraySuperClass;
 
-import static de.robv.android.xposed.XposedHelpers.decrementMethodDepth;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
-import static de.robv.android.xposed.XposedHelpers.getIntField;
-import static de.robv.android.xposed.XposedHelpers.getLongField;
-import static de.robv.android.xposed.XposedHelpers.getObjectField;
-import static de.robv.android.xposed.XposedHelpers.incrementMethodDepth;
+import static com.miui.mask.XposedHelpers.decrementMethodDepth;
+import static com.miui.mask.XposedHelpers.findAndHookMethod;
+import static com.miui.mask.XposedHelpers.getIntField;
+import static com.miui.mask.XposedHelpers.getLongField;
+import static com.miui.mask.XposedHelpers.getObjectField;
+import static com.miui.mask.XposedHelpers.incrementMethodDepth;
 
 /**
  * {@link android.content.res.Resources} subclass that allows replacing individual resources.

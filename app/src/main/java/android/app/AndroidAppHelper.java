@@ -12,15 +12,15 @@ import android.view.Display;
 import java.lang.ref.WeakReference;
 import java.util.Map;
 
-import de.robv.android.xposed.XSharedPreferences;
-import de.robv.android.xposed.XposedBridge;
+import com.miui.mask.XSharedPreferences;
+import com.miui.mask.XposedBridge;
 
-import static de.robv.android.xposed.XposedHelpers.findClass;
-import static de.robv.android.xposed.XposedHelpers.findFieldIfExists;
-import static de.robv.android.xposed.XposedHelpers.findMethodExactIfExists;
-import static de.robv.android.xposed.XposedHelpers.getObjectField;
-import static de.robv.android.xposed.XposedHelpers.newInstance;
-import static de.robv.android.xposed.XposedHelpers.setFloatField;
+import static com.miui.mask.XposedHelpers.findClass;
+import static com.miui.mask.XposedHelpers.findFieldIfExists;
+import static com.miui.mask.XposedHelpers.findMethodExactIfExists;
+import static com.miui.mask.XposedHelpers.getObjectField;
+import static com.miui.mask.XposedHelpers.newInstance;
+import static com.miui.mask.XposedHelpers.setFloatField;
 
 /**
  * Contains various methods for information about the current app.

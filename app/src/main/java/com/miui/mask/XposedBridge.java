@@ -1,4 +1,4 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
@@ -23,12 +23,12 @@ import java.util.Map;
 import java.util.Set;
 
 import dalvik.system.PathClassLoader;
-import de.robv.android.xposed.XC_MethodHook.MethodHookParam;
-import de.robv.android.xposed.callbacks.XC_InitPackageResources;
-import de.robv.android.xposed.callbacks.XC_LoadPackage;
+import com.miui.mask.XC_MethodHook.MethodHookParam;
+import com.miui.mask.callbacks.XC_InitPackageResources;
+import com.miui.mask.callbacks.XC_LoadPackage;
 
-import static de.robv.android.xposed.XposedHelpers.getIntField;
-import static de.robv.android.xposed.XposedHelpers.setObjectField;
+import static com.miui.mask.XposedHelpers.getIntField;
+import static com.miui.mask.XposedHelpers.setObjectField;
 
 /**
  * This class contains most of Xposed's central logic, such as initialization and callbacks used by

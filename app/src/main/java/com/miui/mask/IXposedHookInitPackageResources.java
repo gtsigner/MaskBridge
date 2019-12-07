@@ -1,9 +1,9 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 import android.content.res.XResources;
 
-import de.robv.android.xposed.callbacks.XC_InitPackageResources;
-import de.robv.android.xposed.callbacks.XC_InitPackageResources.InitPackageResourcesParam;
+import com.miui.mask.callbacks.XC_InitPackageResources;
+import com.miui.mask.callbacks.XC_InitPackageResources.InitPackageResourcesParam;
 
 /**
  * Get notified when the resources for an app are initialized.

@@ -1,6 +1,6 @@
-package de.robv.android.xposed.callbacks;
+package com.miui.mask.callbacks;
 
-import de.robv.android.xposed.IXposedHookZygoteInit;
+import com.miui.mask.IXposedHookZygoteInit;
 
 /**
  * Interface for objects that can be used to remove callbacks.

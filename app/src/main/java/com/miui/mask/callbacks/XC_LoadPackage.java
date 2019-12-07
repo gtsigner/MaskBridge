@@ -1,9 +1,9 @@
-package de.robv.android.xposed.callbacks;
+package com.miui.mask.callbacks;
 
 import android.content.pm.ApplicationInfo;
 
-import de.robv.android.xposed.IXposedHookLoadPackage;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
+import com.miui.mask.IXposedHookLoadPackage;
+import com.miui.mask.XposedBridge.CopyOnWriteSortedSet;
 
 /**
  * This class is only used for internal purposes, except for the {@link LoadPackageParam}

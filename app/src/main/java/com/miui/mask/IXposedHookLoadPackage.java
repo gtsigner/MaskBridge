@@ -1,9 +1,9 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 import android.app.Application;
 
-import de.robv.android.xposed.callbacks.XC_LoadPackage;
-import de.robv.android.xposed.callbacks.XC_LoadPackage.LoadPackageParam;
+import com.miui.mask.callbacks.XC_LoadPackage;
+import com.miui.mask.callbacks.XC_LoadPackage.LoadPackageParam;
 
 /**
  * Get notified when an app ("Android package") is loaded.

@@ -1,6 +1,6 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
-import de.robv.android.xposed.callbacks.XCallback;
+import com.miui.mask.callbacks.XCallback;
 
 /**
  * A special case of {@link XC_MethodHook} which completely replaces the original method.

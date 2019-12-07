@@ -1,11 +1,11 @@
-package de.robv.android.xposed.callbacks;
+package com.miui.mask.callbacks;
 
 import android.os.Bundle;
 
 import java.io.Serializable;
 
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
+import com.miui.mask.XposedBridge;
+import com.miui.mask.XposedBridge.CopyOnWriteSortedSet;
 
 /**
  * Base class for Xposed callbacks.

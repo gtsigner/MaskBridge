@@ -1,11 +1,11 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 import android.os.SELinux;
 
-import de.robv.android.xposed.services.BaseService;
-import de.robv.android.xposed.services.BinderService;
-import de.robv.android.xposed.services.DirectAccessService;
-import de.robv.android.xposed.services.ZygoteService;
+import com.miui.mask.services.BaseService;
+import com.miui.mask.services.BinderService;
+import com.miui.mask.services.DirectAccessService;
+import com.miui.mask.services.ZygoteService;
 
 /**
  * A helper to work with (or without) SELinux, abstracting much of its big complexity.

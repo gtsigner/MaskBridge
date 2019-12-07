@@ -1,4 +1,4 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 /**
  * Hook the initialization of Zygote process(es), from which all the apps are forked.

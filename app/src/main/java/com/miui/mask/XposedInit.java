@@ -1,4 +1,4 @@
-package de.robv.android.xposed;
+package com.miui.mask;
 
 import android.annotation.SuppressLint;
 import android.app.ActivityThread;
@@ -38,27 +38,27 @@ import java.util.zip.ZipFile;
 
 import dalvik.system.DexFile;
 import dalvik.system.PathClassLoader;
-import de.robv.android.xposed.callbacks.XC_InitPackageResources;
-import de.robv.android.xposed.callbacks.XC_LoadPackage;
-import de.robv.android.xposed.callbacks.XCallback;
-import de.robv.android.xposed.services.BaseService;
+import com.miui.mask.callbacks.XC_InitPackageResources;
+import com.miui.mask.callbacks.XC_LoadPackage;
+import com.miui.mask.callbacks.XCallback;
+import com.miui.mask.services.BaseService;
 
-import static de.robv.android.xposed.XposedBridge.hookAllConstructors;
-import static de.robv.android.xposed.XposedBridge.hookAllMethods;
-import static de.robv.android.xposed.XposedHelpers.callMethod;
-import static de.robv.android.xposed.XposedHelpers.closeSilently;
-import static de.robv.android.xposed.XposedHelpers.fileContains;
-import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
-import static de.robv.android.xposed.XposedHelpers.findClass;
-import static de.robv.android.xposed.XposedHelpers.findFieldIfExists;
-import static de.robv.android.xposed.XposedHelpers.getBooleanField;
-import static de.robv.android.xposed.XposedHelpers.getObjectField;
-import static de.robv.android.xposed.XposedHelpers.getOverriddenMethods;
-import static de.robv.android.xposed.XposedHelpers.getParameterIndexByType;
-import static de.robv.android.xposed.XposedHelpers.setObjectField;
-import static de.robv.android.xposed.XposedHelpers.setStaticBooleanField;
-import static de.robv.android.xposed.XposedHelpers.setStaticLongField;
-import static de.robv.android.xposed.XposedHelpers.setStaticObjectField;
+import static com.miui.mask.XposedBridge.hookAllConstructors;
+import static com.miui.mask.XposedBridge.hookAllMethods;
+import static com.miui.mask.XposedHelpers.callMethod;
+import static com.miui.mask.XposedHelpers.closeSilently;
+import static com.miui.mask.XposedHelpers.fileContains;
+import static com.miui.mask.XposedHelpers.findAndHookMethod;
+import static com.miui.mask.XposedHelpers.findClass;
+import static com.miui.mask.XposedHelpers.findFieldIfExists;
+import static com.miui.mask.XposedHelpers.getBooleanField;
+import static com.miui.mask.XposedHelpers.getObjectField;
+import static com.miui.mask.XposedHelpers.getOverriddenMethods;
+import static com.miui.mask.XposedHelpers.getParameterIndexByType;
+import static com.miui.mask.XposedHelpers.setObjectField;
+import static com.miui.mask.XposedHelpers.setStaticBooleanField;
+import static com.miui.mask.XposedHelpers.setStaticLongField;
+import static com.miui.mask.XposedHelpers.setStaticObjectField;
 
 /*package*/ final class XposedInit {
 	private static final String TAG = XposedBridge.TAG;
@@ -66,7 +66,7 @@ import static de.robv.android.xposed.XposedHelpers.setStaticObjectField;
 	private static final boolean startsSystemServer = XposedBridge.startsSystemServer();
 	private static final String startClassName = XposedBridge.getStartClassName();
 
-	private static final String INSTALLER_PACKAGE_NAME = "de.robv.android.xposed.installer";
+	private static final String INSTALLER_PACKAGE_NAME = "com.miui.mask.installer";
 	@SuppressLint("SdCardPath")
 	private static final String BASE_DIR = Build.VERSION.SDK_INT >= 24
 			? "/data/user_de/0/" + INSTALLER_PACKAGE_NAME + "/"

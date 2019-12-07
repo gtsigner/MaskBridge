@@ -1,4 +1,4 @@
-package de.robv.android.xposed.services;
+package com.miui.mask.services;
 
 import java.io.BufferedInputStream;
 import java.io.File;
