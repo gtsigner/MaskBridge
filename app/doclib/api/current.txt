@@ -304,7 +304,7 @@ package de.robv.android.xposed.callbacks {
     field public java.lang.String processName;
   }
 
-  public abstract class XCallback {
+  public abstract class XCallback implements java.lang.Comparable {
     ctor public deprecated XCallback();
     field public static final int PRIORITY_DEFAULT = 50; // 0x32
     field public static final int PRIORITY_HIGHEST = 10000; // 0x2710
